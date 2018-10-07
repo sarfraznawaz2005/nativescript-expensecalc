@@ -10,6 +10,7 @@ function HomeViewModel() {
         start_date: '',
         end_date: '',
         expense: '',
+        days_excluded: 0,
         total: 0.00,
 
         onselectStartDate: function () {
@@ -64,7 +65,7 @@ function HomeViewModel() {
             const days = daysBetween(this.start_date, this.end_date);
             console.log(days);
 
-            this.total = (Math.round((days * this.expense * 1000) / 10) / 100).toFixed(2);
+            this.total = (Math.round(((days - this.days_excluded) * this.expense * 1000) / 10) / 100).toFixed(2);
         }
     });
 

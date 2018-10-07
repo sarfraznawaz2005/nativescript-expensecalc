@@ -6,10 +6,11 @@
     </ActionBar>
 
     <StackLayout>
-        <GridLayout columns="*" rows="auto, auto, auto" class="form m-20">
+        <GridLayout columns="*" rows="auto, auto, auto, auto" class="form m-20">
             <TextView text="{{ start_date }}" hint="Start Date" row="0" col="0" editable="false" class="input input-border m-b-10" tap="{{ onselectStartDate }}"></TextView>
             <TextView text="{{ end_date }}" hint="End Date" row="1" col="0" editable="false" class="input input-border m-b-10" tap="{{ onselectEndDate }}"></TextView>
             <TextField text="{{ expense }}" hint="Expense Per Unit" row="2" col="0" keyboardType="number" required="true" class="input input-border m-b-10" />
+            <TextField text="{{ days_excluded }}" hint="# Days Excluded" row="3" col="0" keyboardType="number" required="true" class="input input-border m-b-10" />
         </GridLayout>
 
         <Button text="Calculate" class="btn btn-primary" tap="{{ onCalculate }}" />
