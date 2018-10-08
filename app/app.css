@@ -23,6 +23,13 @@ components that have the btn class name.
     font-size: 40;
     font-weight: bold;
     text-align: center;
-    color: forestgreen;
+    background-color: forestgreen;
+    color:#fff;
     padding: 5;
+    margin: 20;
+    border:1px solid green;
+    border-width: 2;
+    border-color: green;
+    border-radius: 10;
+    width: auto;
 }

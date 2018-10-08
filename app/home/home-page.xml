@@ -11,9 +11,9 @@
             <TextView text="{{ end_date }}" hint="End Date" row="1" col="0" editable="false" class="input input-border m-b-10" tap="{{ onselectEndDate }}"></TextView>
             <TextField text="{{ expense }}" hint="Expense Per Unit" row="2" col="0" keyboardType="number" required="true" class="input input-border m-b-10" />
             <TextField text="{{ days_excluded }}" hint="# Days Excluded" row="3" col="0" keyboardType="number" required="true" class="input input-border m-b-10" />
-        </GridLayout>
+        </GridLayout>        
 
-        <Button text="Calculate" class="btn btn-primary" tap="{{ onCalculate }}" />
+        <Button text="Calculate" class="btn btn-primary" tap="{{ onCalculate }}" />        
 
         <Label class="result" text="{{ total }}"></Label>
     </StackLayout>
