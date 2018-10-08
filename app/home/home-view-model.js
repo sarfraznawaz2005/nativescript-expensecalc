@@ -74,8 +74,8 @@ function HomeViewModel() {
     function daysBetween(date1, date2) {
         const ONE_DAY = 1000 * 60 * 60 * 24;
 
-        var date1 = date1.split('/');
-        var date2 = date2.split('/');
+        date1 = date1.split('/');
+        date2 = date2.split('/');
 
         date1 = new Date(date1[2], date1[1], date1[0]);
         date2 = new Date(date2[2], date2[1], date2[0]);
